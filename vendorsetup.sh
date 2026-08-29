@@ -5,6 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo fox_anakin-user
-add_lunch_combo fox_anakin-userdebug
-add_lunch_combo fox_anakin-eng
+add_lunch_combo twrp_anakin-user
+add_lunch_combo twrp_anakin-userdebug
+add_lunch_combo twrp_anakin-eng

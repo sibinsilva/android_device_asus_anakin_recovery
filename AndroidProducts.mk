@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_anakin.mk
+    $(LOCAL_DIR)/twrp_anakin.mk
 
 COMMON_LUNCH_CHOICES := \
-    fox_anakin-user \
-    fox_anakin-userdebug \
-    fox_anakin-eng
+    twrp_anakin-user \
+    twrp_anakin-userdebug \
+    twrp_anakin-eng

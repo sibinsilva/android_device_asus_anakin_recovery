@@ -20,7 +20,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/asustek/anakin/device.mk)
 
 PRODUCT_DEVICE := anakin
-PRODUCT_NAME := fox_anakin
+PRODUCT_NAME := twrp_anakin
 PRODUCT_BRAND := ASUS
 PRODUCT_MODEL := ASUS_I005D
 PRODUCT_MANUFACTURER := asustek
