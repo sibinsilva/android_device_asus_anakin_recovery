@@ -27,7 +27,14 @@ PRODUCT_MANUFACTURER := ASUSTeK
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
+# Real ASUS stock identity, matching this project's own device/asus/anakin
+# PRODUCT_BUILD_PROP_OVERRIDES - a recovery isn't tied to any one ROM, so it
+# shouldn't carry a DerpFest-specific fingerprint (what the generator extracted
+# from our own boot.img, since that boot.img happened to be DerpFest-built).
+# "PRIVATE_BUILD_DESC" also isn't a recognized PRODUCT_BUILD_PROP_OVERRIDES key
+# in AOSP's sysprop generation - "BuildDesc" is the correct one, confirmed by
+# this project's own already-working derp_anakin.mk.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="derp_anakin-userdebug 13 TQ3A.230901.001 1787985701 release-keys"
+    BuildDesc="WW_I005D-user 13 TKQ1.220807.001 33.0210.0210.200 release-keys"
 
-BUILD_FINGERPRINT := ASUS/derp_anakin/anakin:13/TQ3A.230901.001/android-build08290817:userdebug/release-keys
+BUILD_FINGERPRINT := asus/WW_I005D/ASUS_I005D:13/TKQ1.220807.001/33.0210.0210.200:user/release-keys
